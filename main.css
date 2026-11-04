@@ -10,6 +10,26 @@ body {
   padding-bottom: 64px;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  border: 2px solid #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.skip-link:visited {
+  color: black;
+}
+
 main {
   display: flex;
   flex-direction: column;
