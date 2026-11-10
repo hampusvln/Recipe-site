@@ -32,12 +32,96 @@ video {
   max-width: 100%;
 }
 
+/* 
+=====================
+    Design tokens
+=====================
+*/
+
+:root {
+  --color-primary: #a10000;
+  --color-background: #a100004d;
+  --color-surface: #fcfcfc;
+  --color-description: #ebebeb;
+}
+
+/* 
+=====================
+    Base styles
+=====================
+*/
+
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #a100004d;
+  background-color: var(--color-background);
   padding-bottom: 64px;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin-top: 24px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+p,
+ul,
+ol {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+/* 
+=====================
+      Layout
+=====================
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 1336px;
+  padding-bottom: 64px;
+  gap: 24px;
+  background-color: var(--color-surface);
+  margin: 0 auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 48px;
+  gap: 24px;
+}
+
+/* 
+=====================
+      Components
+=====================
+*/
+
+/* Skip link */
 .skip-link {
   position: absolute;
   top: -100px;
@@ -58,36 +142,7 @@ body {
   color: black;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1280px;
-  min-height: 1336px;
-  padding-bottom: 64px;
-  gap: 24px;
-  background-color: #fcfcfc;
-  margin: 0 auto;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.article-content {
-  display: flex;
-  flex-direction: column;
-  padding: 0 48px;
-  gap: 24px;
-}
-
-.image-container {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-}
+/* Header image */
 
 .header-image {
   width: 100%;
@@ -96,27 +151,23 @@ article {
   object-fit: cover;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.2;
-  color: #a10000;
-  margin-top: 24px;
+.image-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.3;
-}
+/* Headline description */
 
 .headline-description {
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
   padding: 16px;
-  background-color: #ebebeb;
+  background-color: var(--color-description);
 }
+
+/* Ingredients and instructions */
 
 .ingredients,
 .instructions {
@@ -125,19 +176,7 @@ h2 {
   gap: 16px;
 }
 
-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-ul,
-ol {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  list-style-position: inside;
-}
+/* Suggestions */
 
 .suggestions {
   display: flex;
@@ -156,3 +195,9 @@ ol {
   height: 467px;
   object-fit: cover;
 }
+
+/* 
+=====================
+      Responsive
+=====================
+*/
