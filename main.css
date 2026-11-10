@@ -1,7 +1,35 @@
+/* 
+=====================
+      CSS RESET
+=====================
+*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default spacing and font */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font: inherit;
+}
+
+/* min body height */
+body {
+  min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
 }
 
 body {
