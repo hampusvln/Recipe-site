@@ -179,6 +179,19 @@ li:has(input:checked) {
   text-decoration: line-through;
 }
 
+.ingredients label {
+  cursor: pointer;
+}
+
+.ingredients label:hover {
+  color: var(--color-primary);
+}
+
+.ingredients input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 /* Suggestions */
 
 .suggestions {
