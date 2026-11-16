@@ -44,6 +44,9 @@ video {
   --color-background: #a100004d;
   --color-surface: #fcfcfc;
   --color-description: #ebebeb;
+  --color-header: #fff1dc;
+  --color-white: #ffffff;
+  --color-box-shadow: #8080805e;
 
   /* Typography */
   --font-family-base: "Open Sans", sans-serif;
@@ -111,6 +114,10 @@ ol {
   list-style-position: inside;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* 
 =====================
       Layout
@@ -141,8 +148,8 @@ main {
   left: 1rem;
   z-index: 1000;
   padding: 0.5rem 1rem;
-  background: #ffffff;
-  border: 2px solid #000;
+  background: var(--color-white);
+  border: 2px solid var(--color-primary);
   font-weight: 700;
   text-decoration: none;
 }
@@ -152,8 +159,69 @@ main {
 }
 
 .skip-link:visited {
-  color: black;
+  color: var(--color-primary);
 }
+
+.skip-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+} 
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 60px;
+  padding-inline: 48px;
+  margin-inline: auto;
+  background-color: var(--color-header);
+}
+
+.logotype-img {
+  width: 50px;
+  height: 50px;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+/* Navigation */
+.site-nav {
+  ul { 
+    list-style-type: none;
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-primary);
+    margin-right: var(--spacing-sm);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    padding: 0.5rem 1rem; 
+
+    &:visited {
+      color: var(--color-primary);
+    }
+
+    &:hover {
+      color: var(--color-background);
+      box-shadow: 3px 3px 3px #8080805e;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+  }
+}
+
+/* Footer */
 
 /* 
 =====================
