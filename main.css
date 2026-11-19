@@ -224,6 +224,14 @@ main {
 
 /* Footer */
 
+.site-footer {
+  padding: var(--spacing-lg);
+  background-color: var(--color-footer);
+  color: var(--color-primary);
+}
+
+
+
 /* 
 =====================
     Recipe page
