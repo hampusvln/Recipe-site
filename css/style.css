@@ -67,6 +67,13 @@ html {
     min-height: 100%;
 }
 
+.logo {
+    font-family: var(--ff-headings);
+    line-height: var(--lh-tight);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+}
+
 h1,
 h2,
 h3,
