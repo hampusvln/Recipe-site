@@ -9,6 +9,7 @@
     align-items: center;
     min-height: 500px;
     margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
     padding: var(--spacing-2xl);
 
     background:
@@ -52,4 +53,75 @@
     background-color: var(--clr-lightblue-100);
     color: var(--clr-darkblue-400);
     border-color: var(--clr-darkblue-400);
+}
+
+/* 
+=====================
+    Recipe Cards
+=====================
+*/
+
+.popular-recipes {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.popular-recipes h2 {
+    text-align: center;
+}
+
+.recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 480px));
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.recipe-card {
+    display: grid;
+    overflow: hidden;
+    color: var(--clr-darkblue-400);
+    text-decoration: none;
+    border: 1px solid var(--clr-gray-300);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.recipe-card-content {
+    display: grid;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+}
+
+.recipe-card-content h3 {
+    font-size: var(--fs-lg);
+}
+
+.recipe-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgb(0 0 0 / 12%);
+}
+
+.recipe-card:focus-visible {
+    outline: 3px solid var(--clr-lightblue-100);
+    outline-offset: 4px;
+}
+
+/* Recipe card colors */
+.recipe-card--rose {
+    background-color: var(--clr-rose);
+}
+
+.recipe-card--teal {
+    background-color: var(--clr-teal);
+}
+
+.recipe-card--sand {
+    background-color: var(--clr-sand);
 }
