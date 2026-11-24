@@ -179,3 +179,29 @@ ol[role='list'] {
     --spacing-2xl: 4rem;
     --spacing-3xl: 5rem;
 }
+
+/* 
+=====================
+      Utilities
+=====================
+*/
+
+.block {
+    display: block;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.link-underline {
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+        border-bottom-color: currentColor;
+    }
+}
