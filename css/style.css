@@ -96,3 +96,86 @@ ul[role='list'],
 ol[role='list'] {
     list-style: none;
 }
+
+/* 
+=====================
+    Custom Fonts
+=====================
+*/
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("../assets/fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fauna One";
+    src: url("../assets/fonts/FaunaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+=====================
+    Design Tokens
+=====================
+*/
+
+:root {
+
+    /* Colors */
+    --clr-gray-100: #F4F5F7;
+    --clr-gray-200: #DEE3E9;
+    --clr-gray-300: #B9C1CC;
+    
+    --clr-lightblue-100: #C6D5E5;
+    --clr-lightblue-200: #9CB1CC;
+    --clr-lightblue-300: #7A81AB;
+
+    --clr-blue-100: #7895A8;
+    --clr-blue-200: #52658D;
+    --clr-blue-300: #2F3F6D;
+
+    --clr-darkblue-100: #454B60;
+    --clr-darkblue-200: #2D3247;
+    --clr-darkblue-300: #24283B;
+    --clr-darkblue-400: #1F2335;
+
+    --clr-sage: #91A99A;
+    --clr-lavender: #A69DBF;
+    --clr-sand: #C9B99F;
+    --clr-rose: #B98791;
+    --clr-teal: #6F9D9A;
+
+    /* Typography */
+    --ff-main: "Fauna One";
+    --ff-headings: "Cinzel";
+
+    /* Font Size */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.875rem;
+    --fs-2xl: 2.25rem;
+    --fs-3xl: 3rem;
+
+    /* Font Weight */
+    --fw-normal: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    /* Line Height */
+    --lh-tight: 0.75rem;
+    --lh-normal: 1.5rem;
+
+      /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 5rem;
+}
