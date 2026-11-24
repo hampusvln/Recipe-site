@@ -156,6 +156,10 @@ ol[role='list'] {
     --clr-rose: #B98791;
     --clr-teal: #6F9D9A;
 
+    --clr-white-500: #ffffff;
+
+    --gradient-hero: linear-gradient(90deg, rgb(0 0 0 / 65%), transparent);
+
     /* Typography */
     --ff-main: "Fauna One";
     --ff-headings: "Cinzel";
