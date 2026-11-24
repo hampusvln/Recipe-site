@@ -1,0 +1,98 @@
+/* 
+=====================
+       Reset
+=====================
+*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default spacing and font */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Minimum body height */
+body {
+  min-height: 100vh;
+}
+
+/* Responsive media */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* 
+=====================
+    Global Styles
+=====================
+*/
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    font-family: var(--ff-main);
+    line-height: var(--lh-normal);
+    color: var(--clr-gray-200);
+    background-color: var(--clr-darkblue-200);
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+html {
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-headings);
+    line-height: var(--lh-tight);
+}
+
+h1,
+h2 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+}
+
+h3,
+h4 {
+    font-weight: var(--fw-semi-bold);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-lightblue-100);
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
