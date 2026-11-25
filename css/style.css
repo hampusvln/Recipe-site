@@ -232,7 +232,7 @@ ol[role='list'] {
     align-items: center;
     padding: var(--spacing-sm) var(--spacing-xl);
     gap: var(--spacing-sm);
-    background-color: var(--clr-darkblue-300);
+    background-color: var(--clr-darkblue-400);
 }
 
 .header-logo {
