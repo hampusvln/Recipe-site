@@ -134,6 +134,39 @@
     list-style-position: inside;
 }
 
+/* 
+=====================
+    Suggestions
+=====================
+*/
+
+.suggestions {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.suggestion-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.suggestion-card {
+    overflow: hidden;
+    background-color: var(--clr-darkblue-400);
+    border-radius: 6px;
+}
+
+.suggestion-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.suggestion-card figcaption {
+    padding: var(--spacing-sm);
+    font-weight: var(--fw-semi-bold);
+}
+
 
 
 
