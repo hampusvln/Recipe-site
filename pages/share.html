@@ -32,17 +32,121 @@
         <a class="login-button link-underline" href="#">Logga In</a>
     </header>
     
-    <main>
+    <main class="share-main">
 
-      <h1>Dela ditt recept</h1>
+      <section class="share-recipe">
 
-      <form>
-        <div>
-          <label>Receptets namn</label>
-          <input type="text">
+        <div class="share-header">
+          <h1>Dela ditt recept</h1>
+          <p>Dela med dig av dina favoriter och sprid matglädje</p>
         </div>
-        
-      </form>
+
+        <form class="share-form">
+          
+          <fieldset class="form-section">
+            <legend>Om receptet</legend>
+
+            <div class="form-field">
+              <label for="recipe-name">Receptets namn *</label>
+              <input type="text" id="recipe-name" name="recipe-name" required>
+            </div>
+
+            <div class="form-field">
+
+              <label for="category">Kategori</label>
+              <select id="category" name="category">
+                <option value="" selected>Välj kategori</option>
+                <option value="breakfast">Frukost</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Middag</option>
+                <option value="dessert">Efterrätt</option>
+                <option value="snacks">Fika</option>
+              </select>
+
+            </div>
+
+            <div class="form-field">
+
+              <label for="cooking-time">Tid i minuter</label>
+              <input type="number" id="cooking-time" name="cooking-time" min="1">
+            
+            </div>
+
+            <div class="form-field">
+
+              <label for="servings">Antal portioner</label>
+              <input type="number" id="servings" name="servings" min="1">
+
+            </div>
+
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Svårighetsgrad</legend>
+
+            <div class="radio-group">
+
+              <label>
+                <input type="radio" name="difficulty" value="easy">
+                Lätt
+              </label>
+
+              <label>
+                <input type="radio" name="difficulty" value="medium">
+                Medel
+              </label>
+
+              <label>
+                <input type="radio" name="difficulty" value="hard">
+                Svår
+              </label>
+
+            </div>
+
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Receptet</legend>
+
+            <div class="form-field">
+              
+              <label for="ingredients">Ingredienser *</label>
+              <textarea id="ingredients" name="ingredients" rows="6" placeholder="Skriv en ingrediens per rad..." required></textarea>
+                    
+            </div>
+
+            <div class="form-field">
+
+              <label for="instructions">Gör såhär *</label>
+              <textarea id="instructions" name="instructions" rows="8" placeholder="Beskriv steg för steg hur receptet tillagas..." required></textarea>
+
+            </div>
+            
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Om dig</legend>
+
+            <div class="form-field">
+
+              <label for="author-name">Ditt namn</label>
+              <input type="text" id="author-name" name="author-name">
+
+            </div>
+
+            <div class="form-field">
+              
+              <label for="email">E-post *</label>
+              <input type="email" id="email" name="email" placeholder="namn@exempel.se" required>
+            </div>
+
+          </fieldset>
+
+          <button type="submit">Skicka recept</button>
+
+        </form>
+
+      </section>
 
     </main>
 
