@@ -133,30 +133,30 @@ ol[role='list'] {
 :root {
 
     /* Colors */
-    --clr-gray-100: #F4F5F7;
-    --clr-gray-200: #DEE3E9;
-    --clr-gray-300: #B9C1CC;
+    --clr-gray-100: oklch(96.996% 0.00298 264.793);
+    --clr-gray-200: oklch(91.375% 0.00989 253.012);
+    --clr-gray-300: oklch(80.805% 0.01793 256.377);
     
-    --clr-lightblue-100: #C6D5E5;
-    --clr-lightblue-200: #9CB1CC;
-    --clr-lightblue-300: #7A81AB;
+    --clr-lightblue-100: oklch(86.658% 0.02761 249.958);
+    --clr-lightblue-200: oklch(75.339% 0.04554 254.831);
+    --clr-lightblue-300: oklch(61.334% 0.06426 276.994);
 
-    --clr-blue-100: #7895A8;
-    --clr-blue-200: #52658D;
-    --clr-blue-300: #2F3F6D;
+    --clr-blue-100: oklch(65.439% 0.0433 237.099);
+    --clr-blue-200: oklch(50.807% 0.06816 264.56);
+    --clr-blue-300: oklch(37.771% 0.08162 267.92);
 
-    --clr-darkblue-100: #454B60;
-    --clr-darkblue-200: #2D3247;
-    --clr-darkblue-300: #24283B;
-    --clr-darkblue-400: #1F2335;
+    --clr-darkblue-100: oklch(41.592% 0.03605 272.334);
+    --clr-darkblue-200: oklch(32.192% 0.03817 273.756);
+    --clr-darkblue-300: oklch(28.194% 0.03555 274.753);
+    --clr-darkblue-400: oklch(26.096% 0.0344 274.166);
 
-    --clr-sage: #91A99A;
-    --clr-lavender: #A69DBF;
-    --clr-sand: #C9B99F;
-    --clr-rose: #B98791;
-    --clr-teal: #6F9D9A;
+    --clr-sage: oklch(71.197% 0.03432 158.11);
+    --clr-lavender: oklch(71.506% 0.04987 297.211);
+    --clr-sand: oklch(79.228% 0.03985 79.946);
+    --clr-rose: oklch(67.5% 0.06258 5.558);
+    --clr-teal: oklch(66.211% 0.04982 191.019);
 
-    --clr-white-500: #ffffff;
+    --clr-white-500: oklch(100% 0.00011 271.152);
 
     --gradient-hero: linear-gradient(90deg, rgb(0 0 0 / 65%), transparent);
 
@@ -180,6 +180,7 @@ ol[role='list'] {
     /* Line Height */
     --lh-tight: 0.75rem;
     --lh-normal: 1.5rem;
+    --lh-large: 1.8rem;
 
       /* Spacing */
     --spacing-xs: 0.5rem;
@@ -328,3 +329,12 @@ ol[role='list'] {
     padding-top: var(--spacing-md);
     border-top: 1px solid var(--clr-darkblue-100);
 }
+
+
+/*
+=====================
+    Responsive
+=====================
+*/
+
+
