@@ -111,16 +111,3 @@
     outline: 3px solid var(--clr-lightblue-100);
     outline-offset: 4px;
 }
-
-/* Recipe card colors */
-.recipe-card--rose {
-    background-color: var(--clr-rose);
-}
-
-.recipe-card--teal {
-    background-color: var(--clr-teal);
-}
-
-.recipe-card--sand {
-    background-color: var(--clr-sand);
-}
