@@ -1,0 +1,172 @@
+/* 
+=====================
+    Recipe Layout
+=====================
+*/
+.recipe-main {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: var(--spacing-xl);
+    background-color: var(--clr-darkblue-300);
+}
+
+.recipe-page {
+    display: grid;
+    gap: var(--spacing-2xl);
+}
+
+/* 
+=====================
+    Recipe Intro
+=====================
+*/
+
+/* Intro layout */
+.recipe-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+/* Intro image */
+.recipe-img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Data list styling */
+.recipe-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xs);
+}
+
+.recipe-data-item {
+    display: grid;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm);
+    background-color: var(--clr-darkblue-400);
+}
+
+.recipe-intro-content {
+    display: grid;
+    align-content: center;
+    gap: var(--spacing-md);
+}
+
+/* 
+=====================
+   Recipe Content
+=====================
+*/
+
+/* Recipe content layout */
+.recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+/* 
+=====================
+    Ingredients
+=====================
+*/
+
+.ingredients {
+    display: grid;
+    align-content: start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background-color: var(--clr-darkblue-400);
+}
+
+.ingredients ul {
+    display: grid;
+    gap: var(--spacing-xs);
+}
+
+/* Ingredients interactions */
+.ingredients {
+  li:has(input:checked) {
+    text-decoration: line-through;
+  }
+
+  /* Mouse hover */
+  label {
+    cursor: pointer;
+
+    &:hover {
+      color: var(--clr-gray-300);
+    }
+  }
+
+  /* keyboard focus */
+  input {
+    &:focus-visible {
+      outline: 2px solid var(--clr-lightblue-100);
+      outline-offset: 2px;
+    }
+  }
+}
+
+/* 
+=====================
+    Instructions
+=====================
+*/
+
+.instructions {
+    display: grid;
+    align-content: start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background-color: var(--clr-darkblue-400);
+}
+
+.instructions ol {
+    display: grid;
+    gap: var(--spacing-xs);
+    list-style-position: inside;
+}
+
+/* 
+=====================
+    Suggestions
+=====================
+*/
+
+.suggestions {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.suggestion-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.suggestion-card {
+    overflow: hidden;
+    background-color: var(--clr-darkblue-400);
+    border-radius: 6px;
+}
+
+.suggestion-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.suggestion-card figcaption {
+    padding: var(--spacing-sm);
+    font-weight: var(--fw-semi-bold);
+}
+
+
+
+

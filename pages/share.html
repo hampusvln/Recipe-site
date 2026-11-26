@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuffins - Hitta och dela recept</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/share.css">
+</head>
+<body>
+    <header class="site-header grid">
+        <a class="header-logo" href="index.html">
+          <span class="logo">Fuffins</span>
+        </a>
+        <nav class="site-nav">
+          <ul class="site-nav-menu grid" role="list">
+            <li>
+                <details class="recipe-dropdown">
+                    <summary class="link-underline">Recept</summary>
+                    <ul class="dropdown-menu" role="list">
+                        <li><a class="link-underline" href="pancakes.html">Pannkakor</a></li>
+                        <li><a class="link-underline" href="#">Köttbullar</a></li>
+                        <li><a class="link-underline" href="#">Lasagne</a></li>
+                        <li><a class="link-underline" href="#">Carbonara</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a class="link-underline" href="about.html">Om Oss</a></li>
+            <li><a class="link-underline" href="share.html">Dela Recept</a></li>
+          </ul>
+        </nav>
+        <a class="login-button link-underline" href="#">Logga In</a>
+    </header>
+    
+    <main class="share-main">
+
+      <section class="share-recipe">
+
+        <div class="share-header">
+          <h1>Dela ditt recept</h1>
+          <p>Dela med dig av dina favoriter och sprid matglädje</p>
+        </div>
+
+        <form class="share-form">
+          
+          <fieldset class="form-section">
+            <legend>Om receptet</legend>
+
+            <div class="form-field">
+              <label for="recipe-name">Receptets namn *</label>
+              <input type="text" id="recipe-name" name="recipe-name" required>
+            </div>
+
+            <div class="form-field">
+
+              <label for="category">Kategori</label>
+              <select id="category" name="category">
+                <option value="" selected>Välj kategori</option>
+                <option value="breakfast">Frukost</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Middag</option>
+                <option value="dessert">Efterrätt</option>
+                <option value="snacks">Fika</option>
+              </select>
+
+            </div>
+
+            <div class="form-field">
+
+              <label for="cooking-time">Tid i minuter</label>
+              <input type="number" id="cooking-time" name="cooking-time" min="1">
+            
+            </div>
+
+            <div class="form-field">
+
+              <label for="servings">Antal portioner</label>
+              <input type="number" id="servings" name="servings" min="1">
+
+            </div>
+
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Svårighetsgrad</legend>
+
+            <div class="radio-group">
+
+              <label>
+                <input type="radio" name="difficulty" value="easy">
+                Lätt
+              </label>
+
+              <label>
+                <input type="radio" name="difficulty" value="medium">
+                Medel
+              </label>
+
+              <label>
+                <input type="radio" name="difficulty" value="hard">
+                Svår
+              </label>
+
+            </div>
+
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Receptet</legend>
+
+            <div class="form-field">
+              
+              <label for="ingredients">Ingredienser *</label>
+              <textarea id="ingredients" name="ingredients" rows="8" placeholder="Skriv en ingrediens per rad..." required></textarea>
+                    
+            </div>
+
+            <div class="form-field">
+
+              <label for="instructions">Gör såhär *</label>
+              <textarea id="instructions" name="instructions" rows="8" placeholder="Beskriv steg för steg hur receptet tillagas..." required></textarea>
+
+            </div>
+            
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Om dig</legend>
+
+            <div class="form-field">
+
+              <label for="author-name">Ditt namn</label>
+              <input type="text" id="author-name" name="author-name">
+
+            </div>
+
+            <div class="form-field">
+              
+              <label for="email">E-post *</label>
+              <input type="email" id="email" name="email" placeholder="namn@exempel.se" required>
+            </div>
+
+          </fieldset>
+
+          <button type="submit">Skicka recept</button>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer class="site-footer grid">
+      
+        <a class="footer-brand grid" href="index.html">
+          <span class="logo">Fuffins</span>
+          <p>Enkla recept som alla kan laga!</p>
+        </a>
+      
+        <div class="footer-nav grid">
+        
+        <a class="link-underline" href="#">Om oss</a>
+        <h3>Fler Recept</h3>
+  
+        <nav>
+          <ul class="grid" role="list">
+            <li><a class="link-underline" href="#">Frukost</a></li>
+            <li><a class="link-underline" href="#">Middag</a></li>
+            <li><a class="link-underline" href="#">Efterrätt</a></li>
+            <li><a class="link-underline" href="#">Fika</a></li>
+          </ul>
+        </nav> 
+
+      </div>
+  
+      <p class="footer-cr">Bilder från picsum.photos · © 2026 Hampus Våhlin</p>
+
+    </footer>
+<script src="../js/layout-inspector.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuffins - Hitta och dela recept</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header class="site-header grid">
+        <a class="header-logo" href="index.html">
+          <span class="logo">Fuffins</span>
+        </a>
+        <nav class="site-nav">
+          <ul class="site-nav-menu grid" role="list">
+            <li>
+                <details class="recipe-dropdown">
+                    <summary class="link-underline">Recept</summary>
+                    <ul class="dropdown-menu" role="list">
+                        <li><a class="link-underline" href="pancakes.html">Pannkakor</a></li>
+                        <li><a class="link-underline" href="#">Köttbullar</a></li>
+                        <li><a class="link-underline" href="#">Lasagne</a></li>
+                        <li><a class="link-underline" href="#">Carbonara</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a class="link-underline" href="about.html">Om Oss</a></li>
+            <li><a class="link-underline" href="share.html">Dela Recept</a></li>
+          </ul>
+        </nav>
+        <a class="login-button link-underline" href="#">Logga In</a>
+    </header>
+    
+    <main>
+      <section class="index-hero">
+          <div class="index-hero-content">
+              <h1>Välkommen till Fuffins</h1>
+              <p>
+                  Hitta nya recept och dela med dig av dina favoriträtter.
+              </p>
+
+                <div class="index-hero-actions">
+                    <a class="button" href="#find-recipes">
+                        Hitta recept
+                    </a>
+
+                    <a class="button" href="share.html">
+                        Dela recept
+                    </a>
+                </div>
+          </div>
+      </section>
+
+      <section class="popular-recipes" id="find-recipes">
+        <h2>Populära recept</h2>
+
+        <div class="recipe-cards">
+
+            <a class="recipe-card" href="pancakes.html">
+                <img src="../assets/images/pancake1.jpg" alt="Pannkakor">
+                <div class="recipe-card-content">
+                    <h3>Pannkakor</h3>
+                    <p>30 min</p>
+                </div>
+            </a>
+
+            <a class="recipe-card" href="#">
+                <img src="../assets/images/meatballs.jfif" alt="Beskrivning av receptet">
+                <div class="recipe-card-content">
+                    <h3>Köttbullar</h3>
+                    <p>45 min</p>
+                </div>
+            </a>
+
+            <a class="recipe-card" href="#">
+                <img src="../assets/images/lasagne.jfif" alt="Beskrivning av receptet">
+                <div class="recipe-card-content">
+                    <h3>Lasagne</h3>
+                    <p>15 min</p>
+                </div>
+            </a>
+
+        </div>
+      </section>
+    
+    </main>
+
+    <footer class="site-footer grid">
+      
+        <a class="footer-brand grid" href="index.html">
+          <span class="logo">Fuffins</span>
+          <p>Enkla recept som alla kan laga!</p>
+        </a>
+      
+        <div class="footer-nav grid">
+        
+        <a class="link-underline" href="#">Om oss</a>
+        <h3>Fler Recept</h3>
+  
+        <nav>
+          <ul class="grid" role="list">
+            <li><a class="link-underline" href="#">Frukost</a></li>
+            <li><a class="link-underline" href="#">Middag</a></li>
+            <li><a class="link-underline" href="#">Efterrätt</a></li>
+            <li><a class="link-underline" href="#">Fika</a></li>
+          </ul>
+        </nav> 
+
+      </div>
+  
+      <p class="footer-cr">Bilder från picsum.photos · © 2026 Hampus Våhlin</p>
+
+    </footer>
+<script src="../js/layout-inspector.js"></script>
+</body>
+</html>

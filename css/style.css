@@ -1,0 +1,340 @@
+/* 
+=====================
+       Reset
+=====================
+*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default spacing and font */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Minimum body height */
+body {
+  min-height: 100vh;
+}
+
+/* Responsive media */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* 
+=====================
+    Global Styles
+=====================
+*/
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    font-family: var(--ff-main);
+    line-height: var(--lh-normal);
+    color: var(--clr-gray-200);
+    background-color: var(--clr-darkblue-200);
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+html {
+    min-height: 100%;
+}
+
+.logo {
+    font-family: var(--ff-headings);
+    line-height: var(--lh-tight);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-headings);
+    line-height: var(--lh-tight);
+}
+
+h1,
+h2 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+}
+
+h3,
+h4 {
+    font-weight: var(--fw-semi-bold);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-lightblue-100);
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* 
+=====================
+    Custom Fonts
+=====================
+*/
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("../assets/fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fauna One";
+    src: url("../assets/fonts/FaunaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+=====================
+    Design Tokens
+=====================
+*/
+
+:root {
+
+    /* Colors */
+    --clr-gray-100: oklch(96.996% 0.00298 264.793);
+    --clr-gray-200: oklch(91.375% 0.00989 253.012);
+    --clr-gray-300: oklch(80.805% 0.01793 256.377);
+    
+    --clr-lightblue-100: oklch(86.658% 0.02761 249.958);
+    --clr-lightblue-200: oklch(75.339% 0.04554 254.831);
+    --clr-lightblue-300: oklch(61.334% 0.06426 276.994);
+
+    --clr-blue-100: oklch(65.439% 0.0433 237.099);
+    --clr-blue-200: oklch(50.807% 0.06816 264.56);
+    --clr-blue-300: oklch(37.771% 0.08162 267.92);
+
+    --clr-darkblue-100: oklch(41.592% 0.03605 272.334);
+    --clr-darkblue-200: oklch(32.192% 0.03817 273.756);
+    --clr-darkblue-300: oklch(28.194% 0.03555 274.753);
+    --clr-darkblue-400: oklch(26.096% 0.0344 274.166);
+
+    --clr-sage: oklch(71.197% 0.03432 158.11);
+    --clr-lavender: oklch(71.506% 0.04987 297.211);
+    --clr-sand: oklch(79.228% 0.03985 79.946);
+    --clr-rose: oklch(67.5% 0.06258 5.558);
+    --clr-teal: oklch(66.211% 0.04982 191.019);
+
+    --clr-white-500: oklch(100% 0.00011 271.152);
+
+    --gradient-hero: linear-gradient(90deg, rgb(0 0 0 / 65%), transparent);
+
+    /* Typography */
+    --ff-main: "Fauna One";
+    --ff-headings: "Cinzel";
+
+    /* Font Size */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.875rem;
+    --fs-2xl: 2.25rem;
+    --fs-3xl: 3rem;
+
+    /* Font Weight */
+    --fw-normal: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    /* Line Height */
+    --lh-tight: 0.75rem;
+    --lh-normal: 1.5rem;
+    --lh-large: 1.8rem;
+
+      /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 5rem;
+}
+
+/* 
+=====================
+      Utilities
+=====================
+*/
+
+.block {
+    display: block;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.link-underline {
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+        border-bottom-color: currentColor;
+    }
+}
+
+/* 
+=====================
+      Components
+=====================
+*/
+
+/* Header */
+.site-header {
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    gap: var(--spacing-sm);
+    background-color: var(--clr-darkblue-400);
+}
+
+.header-logo {
+    justify-self: start;
+}
+
+.site-nav {
+    justify-self: center;
+}
+
+.site-nav-menu {
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: var(--spacing-lg)
+}
+
+.login-button {
+    justify-self: end;
+}
+
+.recipe-dropdown {
+    position: relative;
+
+    summary {
+        cursor: pointer;
+        list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    padding: var(--spacing-sm);
+    background-color: var(--clr-darkblue-300);
+    border-radius: 6px;
+    z-index: 10;
+
+    li {
+        padding: var(--spacing-xs);
+    }
+}
+
+/* Footer */
+.site-footer {
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "brand nav"
+    "copyright copyright";
+    align-items: center;
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    row-gap: var(--spacing-2xl);
+    background-color: var(--clr-darkblue-400);
+}
+
+.footer-brand {
+    grid-area: brand;
+    justify-self: start;
+    text-align: center;
+    gap: var(--spacing-sm);
+
+    h2 {
+        font-size: var(--fs-2xl);
+    }
+}
+
+.footer-nav {
+    grid-area: nav;
+    justify-self: end;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--spacing-lg);
+
+    h3 {
+        font-weight: var(--fw-bold);
+    }
+
+    ul {
+        gap: var(--spacing-xs);
+    }
+}
+
+.footer-cr {
+    grid-area: copyright;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--clr-darkblue-100);
+}
+
+
+/*
+=====================
+    Responsive
+=====================
+*/
+
+
