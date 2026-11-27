@@ -17,12 +17,9 @@
 }
 
 .share-header {
+    display: grid;
     text-align: center;
     gap: var(--spacing-sm);
-
-    h1 {
-        margin-bottom: var(--spacing-sm);
-    }
 }
 
 .share-form {
@@ -90,6 +87,26 @@
     background-color: var(--clr-gray-200);
     border: none;
     cursor: pointer;
+}
+
+/* 
+=====================
+    Responsive
+=====================
+*/
+
+@media (max-width: 600px) {
+    .share-main {
+        padding: var(--spacing-md);
+    }
+
+    .form-section {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section .form-field {
+        grid-column: 1 / -1;
+    }
 }
 
 
